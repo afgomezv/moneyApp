@@ -1,0 +1,20 @@
+.listMove__container {
+  margin-top: 10px;
+  margin-left: 12px;
+  padding: 6px;
+  width: 50%;
+  background-color: darkgrey;
+  border-radius: 16px;
+}
+
+.listMove__delete {
+  margin: 4px;
+  color: red;
+  cursor: pointer;
+}
+
+.listMove__edit {
+  margin: 4px;
+  color: lightseagreen;
+  cursor: pointer;
+}
