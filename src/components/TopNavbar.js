@@ -1,7 +1,7 @@
 import { Navbar, Container, Form } from "react-bootstrap";
 import { FcMoneyTransfer } from "react-icons/fc";
 
-const TopNavbar = () => {
+const TopNavbar = ({ saldoInicial, saldoFinal }) => {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
@@ -10,15 +10,17 @@ const TopNavbar = () => {
           MoneyApp
         </Navbar.Brand>
         <Form className="d-flex">
+          <Form.Label>Saldo Inicial</Form.Label>
           <Form.Control
             type="search"
-            placeholder="Saldo Inicial"
+            placeholder={saldoInicial}
             className="me-2"
             aria-label="Search"
           />
+          <Form.Label>Saldo Final</Form.Label>
           <Form.Control
             type="search"
-            placeholder="Saldo Final"
+            placeholder={saldoFinal}
             className="me-2"
             aria-label="Search"
           />
